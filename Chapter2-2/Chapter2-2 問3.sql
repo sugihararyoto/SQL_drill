@@ -9,7 +9,7 @@ ON
 	b.isbn=r.isbn
 GROUP BY
 	b.title,
-	r.isbn
+	b.isbn
 ORDER BY
 	COUNT(r.isbn) DESC
 ;
