@@ -14,6 +14,8 @@ GROUP BY
 	u.l_name,
 	u.f_name,
 	r.user_id
+HAVING
+	COUNT(*) > 0
 ORDER BY
-	COUNT(r.user_id) DESC
+	COUNT(*) DESC
 ;
